@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+ 
+:root {
+    --fs: clamp(1.6rem, min(5.5vw, 9vh), 4.5rem);
+    --dim: rgba(255, 255, 255, 0.08);
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body {
+    min-height: 100vh;
+    background: #04060a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+ 
+.greetings {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.25em; /* menyeimbangkan letter-spacing huruf terakhir */
+    font-size: var(--fs);
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    line-height: 1.4;
+}
+ 
+.greetings.nama {
+    font-size: calc(var(--fs) * 0.8);
+    letter-spacing: 0.35em;
+    padding-left: 0.35em;
+}
+ 
+/* Tiap huruf menyala bergantian, lalu diulang terus (infinite) */
+.greetings span {
+    color: var(--dim);
+    animation: glow var(--dur, 7s) ease-in-out infinite;
+    animation-delay: calc(var(--i) * var(--step, 0.3s));
+}
+ 
+@keyframes glow {
+    0%, 14%, 100% {
+        color: var(--dim);
+        text-shadow: none;
+    }
+    4%, 8% {
+        color: #fff;
+        text-shadow: 0 0 10px #9fd4ff, 0 0 24px #4aa8ff, 0 0 48px #4aa8ff;
+    }
+}
+ 
+.description {
+    margin-top: 1.5rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+    font-weight: 600;
+}
+ 
+.button { margin-top: 0.8rem; }
+ 
+.btn {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: #f0f0f0;
+    color: #111;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+ 
+.btn:hover,
+.btn:focus-visible {
+    background: #fff;
+    box-shadow: 0 0 12px #4aa8ff;
+    outline: none;
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+    .greetings span { animation: none; color: #bfe3ff; }
+} @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+ 
+:root {
+    --fs: clamp(1.6rem, min(5.5vw, 9vh), 4.5rem);
+    --dim: rgba(255, 255, 255, 0.08);
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body {
+    min-height: 100vh;
+    background: #04060a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+ 
+.greetings {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.25em; /* menyeimbangkan letter-spacing huruf terakhir */
+    font-size: var(--fs);
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    line-height: 1.4;
+}
+ 
+.greetings.nama {
+    font-size: calc(var(--fs) * 0.8);
+    letter-spacing: 0.35em;
+    padding-left: 0.35em;
+}
+ 
+/* Tiap huruf menyala bergantian, lalu diulang terus (infinite) */
+.greetings span {
+    color: var(--dim);
+    animation: glow var(--dur, 7s) ease-in-out infinite;
+    animation-delay: calc(var(--i) * var(--step, 0.3s));
+}
+ 
+@keyframes glow {
+    0%, 14%, 100% {
+        color: var(--dim);
+        text-shadow: none;
+    }
+    4%, 8% {
+        color: #fff;
+        text-shadow: 0 0 10px #9fd4ff, 0 0 24px #4aa8ff, 0 0 48px #4aa8ff;
+    }
+}
+ 
+.description {
+    margin-top: 1.5rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+    font-weight: 600;
+}
+ 
+.button { margin-top: 0.8rem; }
+ 
+.btn {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: #f0f0f0;
+    color: #111;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+ 
+.btn:hover,
+.btn:focus-visible {
+    background: #fff;
+    box-shadow: 0 0 12px #4aa8ff;
+    outline: none;
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+    .greetings span { animation: none; color: #bfe3ff; }
+} @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+ 
+:root {
+    --fs: clamp(1.6rem, min(5.5vw, 9vh), 4.5rem);
+    --dim: rgba(255, 255, 255, 0.08);
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body {
+    min-height: 100vh;
+    background: #04060a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+ 
+.greetings {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.25em; /* menyeimbangkan letter-spacing huruf terakhir */
+    font-size: var(--fs);
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    line-height: 1.4;
+}
+ 
+.greetings.nama {
+    font-size: calc(var(--fs) * 0.8);
+    letter-spacing: 0.35em;
+    padding-left: 0.35em;
+}
+ 
+/* Tiap huruf menyala bergantian, lalu diulang terus (infinite) */
+.greetings span {
+    color: var(--dim);
+    animation: glow var(--dur, 7s) ease-in-out infinite;
+    animation-delay: calc(var(--i) * var(--step, 0.3s));
+}
+ 
+@keyframes glow {
+    0%, 14%, 100% {
+        color: var(--dim);
+        text-shadow: none;
+    }
+    4%, 8% {
+        color: #fff;
+        text-shadow: 0 0 10px #9fd4ff, 0 0 24px #4aa8ff, 0 0 48px #4aa8ff;
+    }
+}
+ 
+.description {
+    margin-top: 1.5rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+    font-weight: 600;
+}
+ 
+.button { margin-top: 0.8rem; }
+ 
+.btn {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: #f0f0f0;
+    color: #111;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+ 
+.btn:hover,
+.btn:focus-visible {
+    background: #fff;
+    box-shadow: 0 0 12px #4aa8ff;
+    outline: none;
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+    .greetings span { animation: none; color: #bfe3ff; }
+}
